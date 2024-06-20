@@ -1,0 +1,22 @@
+aws_region                   = ""
+aws_profile                  = ""
+aws_account_id               = ""
+vpc_id                       = ""
+ecr_repository               = "lead-api-score"
+ecs_task_execution_role_name = ""
+ecs_auto_scale_role_name     = ""
+az_count                     = "2"
+app_image                    = ""
+app_port                     = "3000"
+app_count                    = "1"
+health_check_path            = "/"
+fargate_cpu                  = "256"
+fargate_memory               = "512"
+private_subnet_cidrs         = ["", ""]
+public_subnet_cidrs          = ["", ""]
+tags = {
+  managed_by  = "terraform"
+  app_name    = "lead-score-api"
+  owner       = "Marketing"
+  environment = "production"
+  }
