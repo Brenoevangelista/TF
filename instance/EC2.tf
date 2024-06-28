@@ -8,7 +8,7 @@ resource "aws_security_group" "teste_breno" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["10.81.234.0/24", "172.16.254.0/23"]
+    cidr_blocks = [""]
   }
 
   ingress {
