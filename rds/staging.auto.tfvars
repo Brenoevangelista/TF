@@ -10,7 +10,7 @@ environment = "stg"
 app_name = ""
 owner = ""
 auto_onoff = "true"
-vpc_id = "vpc-0b43acd358776bbe2"
+vpc_id = "vpc-"
 rds_private_subnet_group = "subnet-group-internal-stg"
 db_instance_class = "db.t4g.small"
 db_engine = "postgres"
@@ -30,6 +30,6 @@ ingress_rules = [
     from_port = 5432
     to_port = 5432
     protocol = "tcp"
-    cidr_blocks = ["10.0.16.0/20","10.81.234.0/24","172.16.0.0/16"]
+    cidr_blocks = [""]
   }
 ]
