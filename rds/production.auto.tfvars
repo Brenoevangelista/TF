@@ -10,7 +10,7 @@ environment = "prd"
 app_name = ""
 owner = ""
 auto_onoff = "false"
-vpc_id = "vpc-0e6c6775ce3870f8a"
+vpc_id = "vpc-"
 rds_private_subnet_group = "rds-subnet-private"
 db_instance_class = "db.t4g.small"
 db_engine = "postgres"
@@ -29,6 +29,6 @@ ingress_rules = [
     from_port = 5432
     to_port = 5432
     protocol = "tcp"
-    cidr_blocks = ["10.10.0.0/20","10.81.234.0/24","172.16.0.0/16","172.31.0.0/16"]
+    cidr_blocks = [""]
   }
 ]
